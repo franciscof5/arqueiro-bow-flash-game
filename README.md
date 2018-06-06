@@ -5,7 +5,7 @@ Made in 2007
 ## Arqueiro Bow (Flash game)
 You are an archer and have to defeat enemies. An original 2D game with top view, the working prototype has only an training arena with an simple original Artificial Inteligent, the game was designed and created by Francisco Matelli Matulovic in january 2007.
 
-![Arqueiro Bow Original Gameplay Screenshot](arqueiro-bow-game-screenshot.jpg?raw=true "Arqueiro Bow Original Gameplay Screenshot")
+![Arqueiro Bow Original Gameplay Screenshot](arqueiro-bow-game-screenshot.jpg)
 
 ## Original game by Francisco Mat
 I made the original version in Flash with objectives to launch and campaign, a training arena and an online version. But in that time I did not know how to handle server and socket communication to make real time communication, when I proposed a partnership with Samuel Kato, that intensive collaborate with project and developed an working demo, we actually played against each other via internet, at time (2007) it was a huge achievment, but Samuel dropped out project and keept the .php files that previously enabled server communication.
