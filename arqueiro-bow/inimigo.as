@@ -11,7 +11,7 @@ class inimigo extends arqueiro {
 	//
 	public function inimigo () {
 		setMarcadorDeVida(_root.menu_mc.jogador2vida_mc);
-		setInterval(atirar, 200*Math.random()+150, this._x, this._y);
+		setInterval(atirar, 200*Math.random()+250, this._x, this._y);
 		//alertar("criado o jogador 2");
 	};
 	//redeclarando a funlção calculos
@@ -36,7 +36,7 @@ class inimigo extends arqueiro {
 			posy = this._y;
 		}
 		
-		if(_root.numeroFlechasInimigasNoPalco<_root.numeroMaximoFlechasNoPalco) {
+		if(_root.numeroFlechasInimigasNoPalco<(_root.numeroMaximoFlechasNoPalco+_root.sequencia_vitorias)) {
 			this.arco_mc.play();
 			//idflecha é só um referencial
 			_root.jogador2_mc.idflecha++;
