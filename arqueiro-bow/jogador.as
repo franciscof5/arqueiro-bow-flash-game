@@ -39,6 +39,7 @@ class jogador extends arqueiro {
 			this.arco_mc.play();
 			//idflecha é só um referencial
 			idflecha+=1;
+			
 			_root._root.numeroFlechasAmigasNoPalco++;
 			//setProperty("_root.flechaRest" + numeroFlechas, _visible, false);
 			

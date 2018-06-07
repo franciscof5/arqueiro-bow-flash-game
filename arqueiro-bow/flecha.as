@@ -15,7 +15,7 @@ class flecha extends MovieClip {
 	var rebateNvezes:Number = 3; //$ numero de vezes que a flecha rebate antes de implodior
 	var hitter_mc:MovieClip; //tem que ser declarado senão da pau
 	var distancia:Number = 0 //importantissima, a flecha só funciona dps que a distancia for maio que uns 5 pixels
-
+	var alvo:MovieClip;
 	
 	private function calculos():Void {
 		yym = this._y - ydestino;
@@ -60,12 +60,18 @@ class flecha extends MovieClip {
 			implodir();
 			
 			//bater no jogadores
-			if(this.hitter_mc.hitTest(_root.jogador1_mc)) {
+			/*if(this.hitter_mc.hitTest(_root.jogador1_mc)) {
 				implodir();
 				_root.jogador1_mc.atingido(1);
 			} else if(this.hitter_mc.hitTest(_root.jogador2_mc)) {
 				implodir();
 				_root.jogador2_mc.atingido(1);
+			}*/
+			if(this.hitter_mc.hitTest(alvo)) {
+				//trace(alvo);
+				alvo.atingido(1);
+				implodir();
+				//_root.jogador2_mc.atingido(1);
 			}
 			
 			if(this._x<0 or this._x>640 or this._y<0 or this._y>480)

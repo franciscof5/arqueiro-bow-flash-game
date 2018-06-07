@@ -1,5 +1,7 @@
 ﻿class flechaAmiga extends flecha {
+
 	public function flechaAmiga () {
+		alvo = _root.jogador2_mc;
 		xdestino = _root._xmouse;
 		ydestino = _root._ymouse;
 		

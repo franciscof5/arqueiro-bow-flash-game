@@ -9,7 +9,7 @@ class arqueiro extends MovieClip {
 	
 	//Variáveis numéricas
 	var numeroFlechadasParaMorrer:Number = 15;// numero de flechadas que o jogador pode tomar
-	var vida:Number = 5;// numero de flechadas que o jogador ja tomou
+	var vida:Number = 15;// numero de flechadas que o jogador ja tomou
 	var grau:Number = 0;
 	var rad:Number;
 	var yym:Number = 2; //xxm é y-ymouse, a distancia
@@ -137,6 +137,7 @@ class arqueiro extends MovieClip {
 	
 	//setadores
 	private function setMarcadorDeVida (novoMarcadorDeVida:MovieClip) {
+		//trace(novoMarcadorDeVida);
 		this.marcadorDeVida = novoMarcadorDeVida;
 	}
 	private function setBalaoNome (novoBalao:MovieClip) {
